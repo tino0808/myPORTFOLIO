@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tino Paul - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Vertical Dashed Lines -->
+    <div class="vertical-line left-line"></div>
+    <div class="vertical-line right-line"></div>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-item" data-text="About">About</a>
+            <a href="#skills" class="nav-item" data-text="Skills">Skills</a>
+            <a href="#projects" class="nav-item" data-text="Projects">Projects</a>
+            <a href="#services" class="nav-item" data-text="Support">Support</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" id="heroTitle">Tino Paul</h1>
+            <p class="hero-subtitle" id="heroSubtitle">Full Stack Developer & UI/UX Designer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title about-title">About</h2>
+            <div class="about-content">
+                <div class="about-image-box">
+                    <img src="entethalaentephoto.jpg" alt="Tino Paul" class="about-image">
+                </div>
+                <div class="about-text-box">
+                    <p>Hello! I'm Tino Paul, a passionate Full Stack Developer and UI/UX Designer with over 5 years of experience creating digital solutions that make a difference. I specialize in building responsive web applications and designing intuitive user experiences that bridge the gap between functionality and aesthetics.</p>
+                    <p>When I'm not coding or designing, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title skills-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-position="left">
+                    <div class="skill-icon">💻</div>
+                    <h3>Frontend Development</h3>
+                    <div class="skill-badges">
+                        <span class="badge">React</span>
+                        <span class="badge">Vue.js</span>
+                        <span class="badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-position="left">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend Development</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-position="right">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Figma</span>
+                        <span class="badge">Adobe XD</span>
+                        <span class="badge">Sketch</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-position="left">
+                    <div class="skill-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <div class="skill-badges">
+                        <span class="badge">React Native</span>
+                        <span class="badge">Flutter</span>
+                        <span class="badge">Ionic</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-position="right">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-badges">
+                        <span class="badge">AWS</span>
+                        <span class="badge">Docker</span>
+                        <span class="badge">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-position="right">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database Management</h3>
+                    <div class="skill-badges">
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Redis</span>
+                        <span class="badge">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title projects-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-box active" id="project1">
+                    <div class="project-header">
+                        <h3>E-Commerce Platform</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>A comprehensive full-stack e-commerce solution built with React and Node.js. Features include user authentication, payment integration, inventory management, and responsive design. The UI/UX design focuses on seamless user experience with intuitive navigation and modern aesthetics.</p>
+                    </div>
+                </div>
+                <div class="project-box" id="project2">
+                    <div class="project-header">
+                        <h3>Task Management App</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>A collaborative task management application with real-time updates using Socket.io. Built with Vue.js frontend and Express.js backend. The design emphasizes productivity with clean interfaces, drag-and-drop functionality, and customizable workflows for teams.</p>
+                    </div>
+                </div>
+                <div class="project-box" id="project3">
+                    <div class="project-header">
+                        <h3>Healthcare Dashboard</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>A comprehensive healthcare management dashboard for medical professionals. Features patient data visualization, appointment scheduling, and analytics. Designed with accessibility in mind, ensuring HIPAA compliance and intuitive user experience for healthcare workers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title services-title">Services</h2>
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason </label>
+                        <textarea id="reason" name="reason" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDQSzumur8hIuLJeyKtwhrffENXwGaGJpQ",
+    authDomain: "myportfolio-t3535.firebaseapp.com",
+    projectId: "myportfolio-t3535",
+    storageBucket: "myportfolio-t3535.appspot.com",
+    messagingSenderId: "180500774529",
+    appId: "1:180500774529:web:9fa30e56c3aa91dac11780"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+    <script src="scripts.js"></script>
+</body>
+</html>
